@@ -17,6 +17,12 @@ Then generate your new project:
 yo projectskel
 ```
 
+Or generate a new module in an existing project:
+
+```bash
+yo projectskel:module
+```
+
 ## Getting To Know Yeoman
 
  * Yeoman has a heart of gold.
