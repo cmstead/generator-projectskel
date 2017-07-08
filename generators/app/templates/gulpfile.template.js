@@ -7,6 +7,7 @@ const eslint = require('gulp-eslint');
 var concat = require('gulp-concat');
 
 const sourceFiles = [
+    'bin/**/*.js',
     'signet-types.js',
     'index.js',
     '!node_modules/**'

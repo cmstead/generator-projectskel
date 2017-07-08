@@ -43,6 +43,7 @@ module.exports = class extends Generator {
             projectDescription: this.projectDescription
         };
 
+        let binPathTokens = ['bin'];
         let testPathTokens = ['test'];
         let testUtilsPathTokens = testPathTokens.concat(['test-utils']);
 
@@ -85,6 +86,11 @@ module.exports = class extends Generator {
             {
                 templatePath: '.npmignore',
                 filePath: '.npmignore',
+                isTemplate: false
+            },
+            {
+                templatePath: joinPath(binPathTokens, 'empty'),
+                filePath: joinPath(binPathTokens, 'empty'),
                 isTemplate: false
             },
             {
