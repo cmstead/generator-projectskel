@@ -1,5 +1,5 @@
 # generator-projects [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Project bootstrapper for wuick startup
+> Project bootstrapper for quick startup
 
 ## Installation
 
@@ -7,13 +7,14 @@ First, install [Yeoman](http://yeoman.io) and generator-projects using [npm](htt
 
 ```bash
 npm install -g yo
-npm install -g generator-projects
+git clone https://github.com/cmstead/generator-projectskel.git
+npm link ./generator-projectskel
 ```
 
 Then generate your new project:
 
 ```bash
-yo projects
+yo projectskel
 ```
 
 ## Getting To Know Yeoman
