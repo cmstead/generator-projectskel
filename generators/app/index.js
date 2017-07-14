@@ -23,7 +23,12 @@ module.exports = class extends Generator {
             {
                 type: 'input',
                 name: 'projectDescription',
-                message: 'Project description'
+                message: 'Project description:'
+            },
+            {
+                type: 'input',
+                name: 'gitUser',
+                message: 'Git username:'
             }
         ];
 
@@ -38,6 +43,7 @@ module.exports = class extends Generator {
         this.destinationRoot(projectName);
 
         const templateValues = {
+            gitUser: this.props.gitUser,
             projectName: projectName,
             projectVarName: this.props.projectVarName,
             projectDescription: this.projectDescription

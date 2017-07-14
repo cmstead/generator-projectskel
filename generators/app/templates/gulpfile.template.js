@@ -1,10 +1,11 @@
 'use strict';
 
-const gulp = require('gulp');
-const mocha = require('gulp-mocha');
-const istanbul = require('gulp-istanbul');
+const babel = require('gulp-babel');
+const concat = require('gulp-concat');
 const eslint = require('gulp-eslint');
-var concat = require('gulp-concat');
+const gulp = require('gulp');
+const istanbul = require('gulp-istanbul');
+const mocha = require('gulp-mocha');
 
 const sourceFiles = [
     'bin/**/*.js',
@@ -17,10 +18,13 @@ const testFiles = [
     'test/**/*.js'
 ];
 
-gulp.task('compile', function() {
-  return gulp.src(sourceFiles)
-    .pipe(concat('<%= projectName %>.js'))
-    .pipe(gulp.dest('./dist/'));
+gulp.task('compile', () => {
+    return gulp.src('./index.js')
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(concat('<%= projectName %>.js'))
+        .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('lint', () => {

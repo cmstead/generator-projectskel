@@ -1,6 +1,6 @@
 {
-  "name": "generator-projectskel",
-  "version": "0.0.0",
+  "name": "generator-signet-project",
+  "version": "1.0.0",
   "description": "Project bootstrapper for quick startup",
   "homepage": "",
   "author": {
@@ -21,9 +21,7 @@
     "yeoman-assert": "^3.0.0",
     "nsp": "^2.6.3",
     "eslint": "^4.1.0",
-    "eslint-config-xo-space": "^0.16.0",
-    "jest": "^19.0.2",
-    "jest-cli": "^20.0.0"
+    "eslint-config-xo-space": "^0.16.0"
   },
   "dependencies": {
     "yeoman-generator": "^1.0.0",
@@ -35,13 +33,6 @@
   },
   "scripts": {
   },
-  "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "jest": true,
-      "node": true
-    }
-  },
-  "repository": "cmstead/generator-projects",
+  "repository": "cmstead/generator-signet-project",
   "license": "MPL-2.0"
 }
