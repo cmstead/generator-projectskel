@@ -85,7 +85,7 @@ module.exports = class extends Generator {
                 isTemplate: false
             },
             {
-                templatePath: '.gitignore',
+                templatePath: '.gitignore.template',
                 filePath: '.gitignore',
                 isTemplate: false
             },
