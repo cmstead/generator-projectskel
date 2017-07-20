@@ -90,7 +90,7 @@ module.exports = class extends Generator {
                 isTemplate: false
             },
             {
-                templatePath: '.npmignore',
+                templatePath: '.npmignore.template',
                 filePath: '.npmignore',
                 isTemplate: false
             },
