@@ -1,6 +1,6 @@
 {
   "name": "<%= projectName %>",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "<%= projectDescription %>",
   "main": "index.js",
   "scripts": {
@@ -33,6 +33,9 @@
   "dependencies": {
     "matchlight": "^1.2.0",
     "signet": "^3.16.2"
+  },
+  "engines": {
+      "node": ">=6.0.0"
   },
   "devDependencies": {
     "approvals": "^2.1.2",
