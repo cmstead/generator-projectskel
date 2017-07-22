@@ -7,20 +7,20 @@ First, install [Yeoman](http://yeoman.io) and generator-projects using [npm](htt
 
 ```bash
 npm install -g yo
-git clone https://github.com/cmstead/generator-projectskel.git
-npm link ./generator-projectskel
+git clone https://github.com/cmstead/generator-signet-project.git
+npm link ./generator-signet-project
 ```
 
 Then generate your new project:
 
 ```bash
-yo projectskel
+yo signet-project
 ```
 
 Or generate a new module in an existing project:
 
 ```bash
-yo projectskel:module
+yo signet-project:module
 ```
 
 ## Getting To Know Yeoman
