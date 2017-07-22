@@ -7,8 +7,7 @@ First, install [Yeoman](http://yeoman.io) and generator-projects using [npm](htt
 
 ```bash
 npm install -g yo
-git clone https://github.com/cmstead/generator-signet-project.git
-npm link ./generator-signet-project
+npm install generator-signet-project -g
 ```
 
 Then generate your new project:
