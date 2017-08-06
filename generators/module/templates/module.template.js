@@ -9,7 +9,7 @@
 
         module.exports = moduleFactory(signet, matchlight.match);
     } else {
-        window.<%= projectVarName %> = moduleFactory(signet, matchlight.match);
+        window.<%= fileVarName %> = moduleFactory(signet, matchlight.match);
     }
 
 })(function (signet, match) {
