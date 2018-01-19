@@ -1,6 +1,6 @@
 {
   "name": "generator-signet-project",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Project bootstrapper for quick startup",
   "homepage": "",
   "author": {
@@ -31,8 +31,7 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "repository": "cmstead/generator-signet-project",
   "license": "MPL-2.0"
 }
