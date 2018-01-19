@@ -5,13 +5,12 @@
 
     if(isNode) {
         const signet = require('./signet-types');
-        const matchlight = require('matchlight')(signet);
 
-        module.exports = moduleFactory(signet, matchlight.match);
+        module.exports = moduleFactory(signet);
     } else {
-        window.<%= fileVarName %> = moduleFactory(signet, matchlight.match);
+        window.<%= fileVarName %> = moduleFactory(signet);
     }
 
-})(function (signet, match) {
+})(function (signet) {
     // source code here
 });

@@ -3,16 +3,15 @@
 
     if (isNode) {
         const signet = require('./signet-types');
-        const matchlight = require('matchlight')(signet);
 
-        module.exports = moduleFactory(signet, matchlight.match);
+        module.exports = moduleFactory(signet);
     } else if (typeof signet === 'object') {
-        window.<%= projectVarName %> = moduleFactory(signet, matchlight.match);
+        window.<%= projectVarName %> = moduleFactory(signet);
     } else {
         throw new Error('The module <%= projectName %> requires Signet to run.');
     }
 
-})(function (signet, match) {
+})(function (signet) {
     'use strict';
 
 
