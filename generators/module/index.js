@@ -37,7 +37,7 @@ module.exports = class extends Generator {
         };
 
         let testPathTokens = ['test'];
-        let binPathTokens = ['bin']
+        let binPathTokens = ['dependencies']
 
         const copyDefinitions = [
             {

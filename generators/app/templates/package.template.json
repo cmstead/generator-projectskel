@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/<%= gitUser %>/<%= projectName %>#readme",
   "dependencies": {
-    "signet": "^3.16.2"
+    "dject": "^1.8.1",
+    "signet": "^6.6.2"
   },
   "engines": {
       "node": ">=6.0.0"

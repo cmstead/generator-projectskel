@@ -1,11 +1,21 @@
 'use strict';
 
-const assert = require('chai').assert;
-const prettyJson = require('./test-utils/prettyJson');
-const sinon = require('sinon');
+const container = require('../container');
 
-const <%= fileVarName %> = require('../bin/<%= fileName %>.js');
+const prettyJson = require('./test-utils/prettyJson');
+const assert = require('chai').assert;
+const sinon = require('sinon');
 
 describe('<%= fileName %>', function () {
     require('./test-utils/approvals-config');
+
+    let <%= fileVarName %>;
+
+    beforeEach(function () {
+        <%= fileVarName %> = container.build('<%= fileVarName %>');
+    });
+
+    it('should have a failing test -- delete this test!', function () {
+        assert.isTrue(false);
+    });
 });

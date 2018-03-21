@@ -1,14 +1,20 @@
 (function (moduleFactory) {
     const isNode = typeof module !== 'undefined' && typeof module.exports !== undefined;
 
-    if(isNode) {
+    if (isNode) {
         module.exports = moduleFactory;
     } else {
         window.container.register(moduleFactory)
     }
 
-})(function <%= fileVarName %> (signet) {
+})(function signet() {
     'use strict';
+    
+    const isNode = typeof module !== 'undefined' && typeof module.exports !== undefined;
 
-    // source code here
+    if (isNode) {
+        return require('../../signet-types');
+    } else {
+        return signet;
+    }
 });

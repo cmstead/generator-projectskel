@@ -49,7 +49,7 @@ module.exports = class extends Generator {
             projectDescription: this.projectDescription
         };
 
-        let binPathTokens = ['bin'];
+        let binPathTokens = ['dependencies'];
         let testPathTokens = ['test'];
         let testUtilsPathTokens = testPathTokens.concat(['test-utils']);
 
@@ -95,8 +95,8 @@ module.exports = class extends Generator {
                 isTemplate: false
             },
             {
-                templatePath: joinPath(binPathTokens, 'empty'),
-                filePath: joinPath(binPathTokens, 'empty'),
+                templatePath: joinPath(binPathTokens, 'module-wrappers' + path.sep + 'signet.js'),
+                filePath: joinPath(binPathTokens, 'module-wrappers' + path.sep + 'signet.js'),
                 isTemplate: false
             },
             {
@@ -108,6 +108,11 @@ module.exports = class extends Generator {
             {
                 templatePath: 'signet-types.js',
                 filePath: 'signet-types.js',
+                isTemplate: false
+            },
+            {
+                templatePath: 'container.js',
+                filePath: 'container.js',
                 isTemplate: false
             },
             {
